@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="2460" viewBox="0 0 800 2460" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.2" fill="#000" opacity="0.12"/>
+    </pattern>
+    <linearGradient id="h1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C56CF0"/><stop offset="1" stop-color="#6C5CE7"/></linearGradient>
+    <linearGradient id="h2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12122A"/><stop offset="1" stop-color="#3D3D6B"/></linearGradient>
+    <linearGradient id="h3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE29F"/><stop offset="1" stop-color="#FFA99F"/></linearGradient>
+    <linearGradient id="h4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6BF"/><stop offset="1" stop-color="#FFD93D"/></linearGradient>
+  </defs>
+  <rect width="800" height="2460" fill="#ffffff"/>
+  <!-- panel 1 -->
+  <g>
+    <rect x="10" y="10" width="780" height="590" rx="18" fill="url(#h1)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="10" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="290" font-size="160" text-anchor="middle">🍿📣📼</text>
+    <rect x="50" y="400" width="700" height="150" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="455" font-size="34" font-weight="bold" text-anchor="middle" fill="#1a1a2e">EP.3 — "Séance Movie Night"</text>
+    <text x="400" y="505" font-size="30" text-anchor="middle" fill="#1a1a2e">Friday = movie night at the haunted flat.</text>
+    <text x="400" y="545" font-size="30" text-anchor="middle" fill="#1a1a2e">Alex picks the film: ghost romance, obviously. 🧟</text>
+  </g>
+  <!-- panel 2 -->
+  <g>
+    <rect x="10" y="620" width="780" height="590" rx="18" fill="url(#h2)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="620" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="890" font-size="150" text-anchor="middle">🎬👻😭</text>
+    <rect x="50" y="1000" width="700" height="160" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="1055" font-size="30" text-anchor="middle" fill="#1a1a2e">Poe narrates the whole movie. Out loud. In verse.</text>
+    <text x="400" y="1100" font-size="30" text-anchor="middle" fill="#1a1a2e">Sir Reginald cheers at the jousting scene.</text>
+    <text x="400" y="1145" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">Jax rates it "two sick riffs out of five". 🎸</text>
+  </g>
+  <!-- panel 3 -->
+  <g>
+    <rect x="10" y="1230" width="780" height="590" rx="18" fill="url(#h3)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="1230" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="1500" font-size="150" text-anchor="middle">🕯️🍿🌀</text>
+    <rect x="50" y="1610" width="700" height="160" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="1665" font-size="30" text-anchor="middle" fill="#1a1a2e">Halfway through — BLACKOUT. The power dies.</text>
+    <text x="400" y="1710" font-size="30" text-anchor="middle" fill="#1a1a2e">The ghosts hold a séance to fix the TV.</text>
+    <text x="400" y="1755" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">It works. The popcorn levitates. 🤯</text>
+  </g>
+  <!-- panel 4 -->
+  <g>
+    <rect x="10" y="1840" width="780" height="610" rx="18" fill="url(#h4)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="1840" width="780" height="610" rx="18" fill="url(#dots)"/>
+    <text x="400" y="2115" font-size="150" text-anchor="middle">🛋️💛🏆</text>
+    <rect x="50" y="2230" width="700" height="170" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="2285" font-size="30" text-anchor="middle" fill="#1a1a2e">Roll credits: one human, three ghosts, one couch.</text>
+    <text x="400" y="2330" font-size="30" text-anchor="middle" fill="#1a1a2e">"Best roommates EVER," Alex whispers.</text>
+    <text x="400" y="2375" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">THE END 💛</text>
+  </g>
+</svg>
