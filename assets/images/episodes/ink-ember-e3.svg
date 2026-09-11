@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="2460" viewBox="0 0 800 2460" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.2" fill="#000" opacity="0.12"/>
+    </pattern>
+    <linearGradient id="m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B1B2F"/><stop offset="1" stop-color="#7C5CFF"/></linearGradient>
+    <linearGradient id="m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF5E62"/><stop offset="1" stop-color="#FF9A3D"/></linearGradient>
+    <linearGradient id="m3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7C5CFF"/><stop offset="1" stop-color="#C56CF0"/></linearGradient>
+    <linearGradient id="m4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6BF"/><stop offset="1" stop-color="#FF9A3D"/></linearGradient>
+  </defs>
+  <rect width="800" height="2460" fill="#ffffff"/>
+  <!-- panel 1 -->
+  <g>
+    <rect x="10" y="10" width="780" height="590" rx="18" fill="url(#m1)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="10" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="290" font-size="160" text-anchor="middle">🚪🕯️📜</text>
+    <rect x="50" y="400" width="700" height="150" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="455" font-size="34" font-weight="bold" text-anchor="middle" fill="#1a1a2e">EP.3 — "A Stranger's Design"</text>
+    <text x="400" y="505" font-size="30" text-anchor="middle" fill="#1a1a2e">Midnight. A cloaked stranger at the parlour door.</text>
+    <text x="400" y="545" font-size="30" text-anchor="middle" fill="#1a1a2e">He unrolls a design in CHILDHOOD crayon. 😳</text>
+  </g>
+  <!-- panel 2 -->
+  <g>
+    <rect x="10" y="620" width="780" height="590" rx="18" fill="url(#m2)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="620" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="890" font-size="150" text-anchor="middle">🐉👶🔥</text>
+    <rect x="50" y="1000" width="700" height="160" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="1055" font-size="30" text-anchor="middle" fill="#1a1a2e">"You were born of dragon-fire," he says.</text>
+    <text x="400" y="1100" font-size="30" text-anchor="middle" fill="#1a1a2e">"This tattoo holds what the flame took."</text>
+    <text x="400" y="1145" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">Ember's hands shake. She lights the needle. 🔥</text>
+  </g>
+  <!-- panel 3 -->
+  <g>
+    <rect x="10" y="1230" width="780" height="590" rx="18" fill="url(#m3)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="1230" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="1500" font-size="150" text-anchor="middle">🌊🔥💛</text>
+    <rect x="50" y="1610" width="700" height="160" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="1665" font-size="30" text-anchor="middle" fill="#1a1a2e">The needle sings. Memories FLOOD back:</text>
+    <text x="400" y="1710" font-size="30" text-anchor="middle" fill="#1a1a2e">a dragon's lullaby. A burning village. A promise.</text>
+    <text x="400" y="1755" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">She is Ember of the Ember-Clan. She remembers. 🐉</text>
+  </g>
+  <!-- panel 4 -->
+  <g>
+    <rect x="10" y="1840" width="780" height="610" rx="18" fill="url(#m4)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="1840" width="780" height="610" rx="18" fill="url(#dots)"/>
+    <text x="400" y="2115" font-size="150" text-anchor="middle">🎨🌅💪</text>
+    <rect x="50" y="2230" width="700" height="170" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="2285" font-size="30" text-anchor="middle" fill="#1a1a2e">The stranger bows. "The debt is paid."</text>
+    <text x="400" y="2330" font-size="30" text-anchor="middle" fill="#1a1a2e">Ember flips the sign: "OPEN — walk-ins welcome".</text>
+    <text x="400" y="2375" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">THE END 🔥💛</text>
+  </g>
+</svg>

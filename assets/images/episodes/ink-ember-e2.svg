@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="2460" viewBox="0 0 800 2460" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.2" fill="#000" opacity="0.12"/>
+    </pattern>
+    <linearGradient id="k1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B2B4D"/><stop offset="1" stop-color="#7C5CFF"/></linearGradient>
+    <linearGradient id="k2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF9A3D"/><stop offset="1" stop-color="#FF5E62"/></linearGradient>
+    <linearGradient id="k3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3D3D6B"/><stop offset="1" stop-color="#1B1B2F"/></linearGradient>
+    <linearGradient id="k4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE29F"/><stop offset="1" stop-color="#FFA99F"/></linearGradient>
+  </defs>
+  <rect width="800" height="2460" fill="#ffffff"/>
+  <!-- panel 1 -->
+  <g>
+    <rect x="10" y="10" width="780" height="590" rx="18" fill="url(#k1)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="10" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="290" font-size="160" text-anchor="middle">🎸🔥🕯️</text>
+    <rect x="50" y="400" width="700" height="150" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="455" font-size="34" font-weight="bold" text-anchor="middle" fill="#1a1a2e">EP.2 — "The Price of Fire"</text>
+    <text x="400" y="505" font-size="30" text-anchor="middle" fill="#1a1a2e">A nervous guitarist begs ink for courage.</text>
+    <text x="400" y="545" font-size="30" text-anchor="middle" fill="#1a1a2e">"Every spell takes a memory," Ember warns. ⚠️</text>
+  </g>
+  <!-- panel 2 -->
+  <g>
+    <rect x="10" y="620" width="780" height="590" rx="18" fill="url(#k2)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="620" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="890" font-size="150" text-anchor="middle">🐉🖌️✨</text>
+    <rect x="50" y="1000" width="700" height="160" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="1055" font-size="30" text-anchor="middle" fill="#1a1a2e">She tattoos a tiny fire salamander.</text>
+    <text x="400" y="1100" font-size="30" text-anchor="middle" fill="#1a1a2e">The ink GLOWS. Tonight the chords will FLY.</text>
+    <text x="400" y="1145" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">The guitarist grins in the mirror. 🎸🔥</text>
+  </g>
+  <!-- panel 3 -->
+  <g>
+    <rect x="10" y="1230" width="780" height="590" rx="18" fill="url(#k3)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="1230" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="1500" font-size="150" text-anchor="middle">🎂🕯️💧</text>
+    <rect x="50" y="1610" width="700" height="160" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="1665" font-size="30" text-anchor="middle" fill="#1a1a2e">The price: Ember's eighth birthday.</text>
+    <text x="400" y="1710" font-size="30" text-anchor="middle" fill="#1a1a2e">Candles, cake, her mother's laugh — gone.</text>
+    <text x="400" y="1755" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">She smiles for the client anyway. 💛</text>
+  </g>
+  <!-- panel 4 -->
+  <g>
+    <rect x="10" y="1840" width="780" height="610" rx="18" fill="url(#k4)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="1840" width="780" height="610" rx="18" fill="url(#dots)"/>
+    <text x="400" y="2115" font-size="150" text-anchor="middle">📓📌🔍</text>
+    <rect x="50" y="2230" width="700" height="170" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="2285" font-size="30" text-anchor="middle" fill="#1a1a2e">Alone, Ember opens her memory journal.</text>
+    <text x="400" y="2330" font-size="30" text-anchor="middle" fill="#1a1a2e">"You love rain." "You hate thunder." "Who was Mom?"</text>
+    <text x="400" y="2375" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">TO BE CONTINUED… 🔥</text>
+  </g>
+</svg>
