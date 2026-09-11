@@ -1,6 +1,5 @@
 # Deploys this static site to GitHub Pages on every push.
-# The bootstrap job enables Pages (workflow builds) automatically on first run,
-# so no manual setup in Settings is required.
+# One-time setup (repo admin): Settings → Pages → Build and deployment → GitHub Actions.
 name: Deploy to GitHub Pages
 
 on:

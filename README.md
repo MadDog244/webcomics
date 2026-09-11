@@ -68,6 +68,13 @@ python3 -m http.server 8080
 
 ## Deployment
 
-Hosted on GitHub Pages (Deploy from branch → `arena/01a09051-webcomics` → `/ (root)`).
-After merging to `main`, switch Pages source to `main` in
-**Settings → Pages → Build and deployment**.
+Hosted on GitHub Pages via the [Deploy to GitHub Pages](../../actions/workflows/pages.yml)
+workflow — every push to `main` (or this branch) redeploys automatically.
+
+**One-time setup** (requires repo admin, ~30 seconds):
+
+1. Open **Settings → Pages** (or visit
+   `https://github.com/MadDog244/webcomics/settings/pages`).
+2. Under **Build and deployment → Source**, select **GitHub Actions**.
+3. Re-run the workflow (or push any commit) — the site goes live at
+   **https://MadDog244.github.io/webcomics/** 🎉
