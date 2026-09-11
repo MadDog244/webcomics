@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="2460" viewBox="0 0 800 2460" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.2" fill="#000" opacity="0.12"/>
+    </pattern>
+    <linearGradient id="q1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B2B4D"/><stop offset="1" stop-color="#7C5CFF"/></linearGradient>
+    <linearGradient id="q2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF9A3D"/><stop offset="1" stop-color="#FF5E62"/></linearGradient>
+    <linearGradient id="q3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3D0B37"/><stop offset="1" stop-color="#A4133C"/></linearGradient>
+    <linearGradient id="q4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4B2DD0"/><stop offset="1" stop-color="#1B1B2F"/></linearGradient>
+  </defs>
+  <rect width="800" height="2460" fill="#ffffff"/>
+  <!-- panel 1 -->
+  <g>
+    <rect x="10" y="10" width="780" height="590" rx="18" fill="url(#q1)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="10" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="290" font-size="170" text-anchor="middle">🌧️💜✨</text>
+    <rect x="50" y="400" width="700" height="150" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="455" font-size="34" font-weight="bold" text-anchor="middle" fill="#1a1a2e">EP.1 — "First Session"</text>
+    <text x="400" y="505" font-size="30" text-anchor="middle" fill="#1a1a2e">Rain over the neon parlour. Ember opens</text>
+    <text x="400" y="545" font-size="30" text-anchor="middle" fill="#1a1a2e">for one client only: midnight. 🌙</text>
+  </g>
+  <!-- panel 2 -->
+  <g>
+    <rect x="10" y="620" width="780" height="590" rx="18" fill="url(#q2)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="620" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="890" font-size="150" text-anchor="middle">🔥✒️🐉</text>
+    <rect x="50" y="1000" width="700" height="160" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="1055" font-size="30" text-anchor="middle" fill="#1a1a2e">Dragon-fire ink. Each tattoo grants a magic…</text>
+    <text x="400" y="1100" font-size="30" text-anchor="middle" fill="#1a1a2e">courage, luck, forgetting…</text>
+    <text x="400" y="1145" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">…and takes one memory in return. 💭</text>
+  </g>
+  <!-- panel 3 -->
+  <g>
+    <rect x="10" y="1230" width="780" height="590" rx="18" fill="url(#q3)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="1230" width="780" height="590" rx="18" fill="url(#dots)"/>
+    <text x="400" y="1500" font-size="150" text-anchor="middle">🐦‍🔥💪✨</text>
+    <rect x="50" y="1610" width="700" height="160" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="1665" font-size="30" text-anchor="middle" fill="#1a1a2e">Tonight: a phoenix, for courage. The ink glows.</text>
+    <text x="400" y="1710" font-size="30" text-anchor="middle" fill="#1a1a2e">The client smiles, braver already.</text>
+    <text x="400" y="1755" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">Somewhere in Ember, a memory fades…</text>
+  </g>
+  <!-- panel 4 -->
+  <g>
+    <rect x="10" y="1840" width="780" height="610" rx="18" fill="url(#q4)" stroke="#1a1a2e" stroke-width="8"/>
+    <rect x="10" y="1840" width="780" height="610" rx="18" fill="url(#dots)"/>
+    <text x="400" y="2115" font-size="150" text-anchor="middle">🚪🧥📜</text>
+    <rect x="50" y="2230" width="700" height="170" rx="16" fill="#fff" stroke="#1a1a2e" stroke-width="6"/>
+    <text x="400" y="2285" font-size="30" text-anchor="middle" fill="#1a1a2e">The bell rings. A stranger unfolds a sketch —</text>
+    <text x="400" y="2330" font-size="30" text-anchor="middle" fill="#1a1a2e">"Ink this, and I can give you back your past."</text>
+    <text x="400" y="2375" font-size="30" font-weight="bold" text-anchor="middle" fill="#1a1a2e">Ember's needle stops. TO BE CONTINUED…</text>
+  </g>
+</svg>
