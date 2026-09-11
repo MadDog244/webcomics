@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InkPanel — Read Original Webcomics Free</title>
+  <meta name="description" content="InkPanel is a simple, free webcomics library. Read original comics in a vertical webtoon-style reader. No sign-up needed." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FFD93D'/><text x='50' y='72' font-size='60' text-anchor='middle' font-family='Arial Black'>💥</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#browse">Skip to comics</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="InkPanel home">
+        <span class="logo-burst">💥</span>
+        <span class="logo-text">Ink<em>Panel</em></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#browse">Browse</a>
+        <a href="#genres">Genres</a>
+        <a href="#about">About</a>
+        <a href="#browse" data-filter-bookmarks>📚 My Library <span class="lib-count" id="libCount">0</span></a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="halftone" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="kicker">🎉 100% free · No sign-up · New episodes weekly</p>
+        <h1>Original webcomics,<br /><span class="highlight">fresh ink daily.</span></h1>
+        <p class="lede">Binge bite-sized comics from indie creators — fantasy quests, cozy mysteries, frog astronauts and more. Tap a cover and start scrolling.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#browse">📖 Start reading</a>
+          <a class="btn btn-ghost" href="#featured">⭐ Featured comic</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt id="statComics">6</dt><dd>comics</dd></div>
+          <div><dt id="statEpisodes">–</dt><dd>episodes</dd></div>
+          <div><dt>★ <span id="statRating">4.8</span></dt><dd>avg rating</dd></div>
+        </dl>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="cover-fan">
+          <img src="assets/images/covers/star-hoppers.jpg" alt="" loading="eager" />
+          <img src="assets/images/covers/pixel-quest.jpg" alt="" loading="eager" class="front" />
+          <img src="assets/images/covers/midnight-diner.jpg" alt="" loading="eager" />
+        </div>
+        <div class="speech-bubble">Pow! New episodes<br />every Friday 🎨</div>
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,0 C240,70 480,70 720,35 C960,0 1200,0 1440,35 L1440,70 L0,70 Z"></path></svg>
+  </section>
+
+  <!-- ============ FEATURED ============ -->
+  <section class="section featured" id="featured">
+    <div class="container">
+      <div class="section-head">
+        <h2><span class="tag">Comic of the week</span> ⭐ Featured</h2>
+      </div>
+      <article class="featured-card" id="featuredCard">
+        <!-- filled by JS -->
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ BROWSE ============ -->
+  <section class="section browse" id="browse">
+    <div class="container">
+      <div class="section-head">
+        <h2>📚 Browse comics</h2>
+        <p class="section-sub">Filter by genre, search by title, or sort by rating.</p>
+      </div>
+
+      <div class="toolbar">
+        <label class="search-box">
+          <span aria-hidden="true">🔍</span>
+          <input type="search" id="searchInput" placeholder="Search comics or authors…" aria-label="Search comics" />
+        </label>
+        <div class="genre-pills" id="genrePills" role="group" aria-label="Filter by genre"></div>
+        <label class="sort-box">Sort
+          <select id="sortSelect" aria-label="Sort comics">
+            <option value="featured">Featured</option>
+            <option value="rating">Top rated</option>
+            <option value="title">A → Z</option>
+            <option value="newest">Newest</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="results-meta" id="resultsMeta" aria-live="polite"></p>
+      <div class="comics-grid" id="comicsGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <p class="empty-emoji">🕳️</p>
+        <h3>No comics found</h3>
+        <p>Try a different search or genre.</p>
+        <button class="btn btn-ghost" id="resetFilters">Reset filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GENRES ============ -->
+  <section class="section genres" id="genres">
+    <div class="container">
+      <div class="section-head">
+        <h2>🎭 Genres</h2>
+        <p class="section-sub">Pick a mood. Every comic is free to read.</p>
+      </div>
+      <div class="genre-grid" id="genreGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="container about-inner">
+      <div class="about-copy">
+        <h2>💡 What is InkPanel?</h2>
+        <p>InkPanel is a tiny demo webcomics library — a single static website with a vertical-scroll reader, just like your favourite webtoon apps. Everything runs in the browser: bookmarks and theme are saved on your device, no account needed.</p>
+        <ul class="checklist">
+          <li>✅ Free forever, no sign-up</li>
+          <li>✅ Mobile-friendly vertical reader</li>
+          <li>✅ Dark mode + personal library</li>
+          <li>✅ New episodes every Friday</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3>✍️ Are you a creator?</h3>
+        <p>Fork this site on GitHub, drop your episodes into <code>assets/images/episodes/</code>, add an entry to <code>comics.js</code> — and you have your own webcomics site.</p>
+        <a class="btn btn-primary" href="https://github.com/MadDog244/webcomics" target="_blank" rel="noopener">View source on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>InkPanel</strong> · a demo webcomics site · Made with 💛 and static HTML</p>
+      <p class="footer-links"><a href="#top">Back to top ↑</a> · <a href="https://github.com/MadDog244/webcomics" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <!-- ============ COMIC DETAIL MODAL ============ -->
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-btn modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ============ READER ============ -->
+  <div class="reader" id="reader" hidden>
+    <div class="reader-bar">
+      <button class="btn btn-ghost btn-sm" id="readerBack">← Library</button>
+      <div class="reader-title">
+        <strong id="readerComicTitle">Comic</strong>
+        <span id="readerEpTitle">Episode 1</span>
+      </div>
+      <div class="reader-nav">
+        <button class="btn btn-ghost btn-sm" id="prevEp">← Prev</button>
+        <button class="btn btn-ghost btn-sm" id="nextEp">Next →</button>
+      </div>
+    </div>
+    <div class="reader-progress"><span id="readerProgress"></span></div>
+    <div class="reader-scroll" id="readerScroll">
+      <div class="reader-pages" id="readerPages"></div>
+      <div class="reader-end" id="readerEnd"></div>
+    </div>
+    <button class="icon-btn reader-top" id="readerTop" aria-label="Back to top of episode">↑</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="assets/js/comics.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
