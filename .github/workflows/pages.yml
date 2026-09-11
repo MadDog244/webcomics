@@ -1,0 +1,63 @@
+# Deploys this static site to GitHub Pages on every push.
+# The bootstrap job enables Pages (workflow builds) automatically on first run,
+# so no manual setup in Settings is required.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [arena/01a09051-webcomics, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  bootstrap:
+    name: Enable Pages (first run only)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable GitHub Pages with workflow builds
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            try {
+              await github.rest.repos.getPages({ owner, repo });
+              core.info('Pages is already enabled.');
+            } catch (e) {
+              if (e.status === 404) {
+                core.info('Pages not enabled yet — creating site (build_type: workflow)…');
+                await github.rest.repos.createPagesSite({ owner, repo, build_type: 'workflow' });
+                core.info('Pages enabled ✔');
+              } else {
+                throw e;
+              }
+            }
+
+  build:
+    name: Upload site artifact
+    runs-on: ubuntu-latest
+    needs: bootstrap
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    name: Deploy to Pages
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
